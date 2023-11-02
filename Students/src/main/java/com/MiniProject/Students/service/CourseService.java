@@ -22,7 +22,7 @@ public class CourseService {
         return courseRepository.save(course);
     }
 
-    public List<course> getAllCourses() {
+    public List<course> getAllCourses() { 
         return courseRepository.findAll();
     }
 

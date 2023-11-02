@@ -30,7 +30,7 @@ public class StudentService {
         Optional<student> optionalStudent = studentRepository.findById(id);
         return optionalStudent.orElse(null);
     }
-
+ 
     public student updateStudent(Long id, student updatedStudent) {
         Optional<student> optionalStudent = studentRepository.findById(id);
         if (optionalStudent.isPresent()) {

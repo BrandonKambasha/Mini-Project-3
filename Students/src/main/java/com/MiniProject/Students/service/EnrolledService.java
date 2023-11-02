@@ -30,7 +30,7 @@ public class EnrolledService {
         Optional<Enrolled> optionalEnrolled = enrolledRepository.findById(id);
         return optionalEnrolled.orElse(null);
     }
-
+ 
     public Enrolled updateEnrolled(Long id, Enrolled updatedEnrolled) {
         Optional<Enrolled> optionalEnrolled = enrolledRepository.findById(id);
         if (optionalEnrolled.isPresent()) {
